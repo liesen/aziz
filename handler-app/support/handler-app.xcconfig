@@ -1,0 +1,8 @@
+
+PRODUCT_NAME = Spot2spot
+EXECUTABLE_NAME = spot2spot_helper
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = handler-app/support/handler-app.pch
+INFOPLIST_FILE = handler-app/support/handler-app.plist
+
+LD_FLAGS = $(LD_FLAGS) -framework Foundation -framework AppKit

@@ -1,0 +1,102 @@
+// All executables are normally named:
+// $(EXECUTABLE_PREFIX)$(PRODUCT_NAME)$(EXECUTABLE_VARIANT_SUFFIX)$(EXECUTABLE_SUFFIX)
+// That's not good enough - we'll skip the $(EXECUTABLE_VARIANT_SUFFIX) or we'll have to rename
+// the .app-bundle (since we're using the 'variant' build setting name)
+EXECUTABLE_NAME = $(EXECUTABLE_PREFIX)$(PRODUCT_NAME)$(EXECUTABLE_SUFFIX)
+
+
+// Build for 64 bits to be able to use properties the way they should ;)
+ARCHS = $(ARCHS_STANDARD_32_BIT)
+
+
+// Dwarf is the shit. Make sure that normal builds get dSYM files
+// as well, so that we can symbolicate them at a later stage if
+// should be needed.
+DEBUG_INFORMATION_FORMAT[variant=debug] = dwarf
+DEBUG_INFORMATION_FORMAT[variant=normal] = dwarf-with-dsym
+DEBUG_INFORMATION_FORMAT[variant=profile] = dwarf
+
+
+// Get rid of symbols...
+DEPLOYMENT_POSTPROCESSING[variant=debug] = NO
+DEPLOYMENT_POSTPROCESSING[variant=normal] = YES
+DEPLOYMENT_POSTPROCESSING[variant=profile] = YES
+
+COPY_PHASE_STRIP[variant=debug] = NO
+COPY_PHASE_STRIP[variant=normal] = YES
+COPY_PHASE_STRIP[variant=profile] = YES
+
+STRIP_INSTALLED_PRODUCT[variant=debug] = NO
+STRIP_INSTALLED_PRODUCT[variant=normal] = YES
+STRIP_INSTALLED_PRODUCT[variant=profile] = YES
+
+STRIPFLAGS = SxX
+
+
+// Apple suggests that you turn these off
+ALWAYS_SEARCH_USER_PATHS = NO
+ZERO_LINK = NO
+PREBINDING = NO
+
+
+// Tune warnings!
+GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES
+GCC_WARN_ABOUT_MISSING_NEWLINE = NO
+GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES
+GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES
+GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
+GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
+GCC_WARN_MISSING_PARENTHESES = YES
+GCC_WARN_SHADOW = YES
+GCC_WARN_SIGN_COMPARE = YES
+GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES
+GCC_WARN_UNKNOWN_PRAGMAS = YES
+GCC_WARN_UNUSED_FUNCTION = YES
+GCC_WARN_UNUSED_LABEL = YES
+GCC_WARN_UNUSED_PARAMETER = YES
+GCC_WARN_UNUSED_VALUE = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+
+WARNING_CFLAGS = -Wall -Wfloat-equal -Wunreachable-code
+
+
+// Daredevil-ish!
+GCC_VERSION = 4.0
+GCC_C_LANGUAGE_STANDARD = c99
+
+
+// You'll only want fix and continue in debug builds
+GCC_ENABLE_FIX_AND_CONTINUE[variant=debug] = YES
+GCC_ENABLE_FIX_AND_CONTINUE[variant=normal] = NO
+GCC_ENABLE_FIX_AND_CONTINUE[variant=profile] = NO
+
+
+// Normal & profile build should use LLVM's link-time optimization, -O4
+GCC_OPTIMIZATION_LEVEL[variant=debug] = 0
+GCC_OPTIMIZATION_LEVEL[variant=normal] = 4
+GCC_OPTIMIZATION_LEVEL[variant=profile] = 4
+
+
+// Preprocessor definitions (NDEBUG removes assertions)
+GCC_PREPROCESSOR_DEFINITIONS[variant=debug] = DEBUG=1
+GCC_PREPROCESSOR_DEFINITIONS[variant=normal] = NDEBUG
+GCC_PREPROCESSOR_DEFINITIONS[variant=profile] = NDEBUG
+
+
+// Prefix header (and compilation of it)
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+
+// Code coverage. Use CoverStory to see the results:
+// http://code.google.com/p/coverstory/wiki/UsingCoverstory
+GCC_GENERATE_TEST_COVERAGE_FILES[variant=debug] = NO
+GCC_GENERATE_TEST_COVERAGE_FILES[variant=normal] = NO
+GCC_GENERATE_TEST_COVERAGE_FILES[variant=profile] = YES
+
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS[variant=debug] = NO
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS[variant=normal] = NO
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS[variant=profile] = YES
+
+LD_FLAGS[variant=profile] = -lgcov

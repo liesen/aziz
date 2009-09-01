@@ -1,0 +1,7 @@
+
+PRODUCT_NAME = spot2spot
+INFOPLIST_FILE = mdimporter/support/mdimporter.plist
+
+WRAPPER_EXTENSION = mdimporter
+
+LD_FLAGS = $(LD_FLAGS) -framework CoreFoundation -framework CoreServices -framework Cocoa

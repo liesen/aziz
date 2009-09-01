@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A5309060F7FD1220094CB5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5309000F7FD1220094CB5B /* main.m */; };
+		3A53097E0F7FE2700094CB5B /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9763BB0F766A05007DD42F /* logging.c */; };
+		3A530A7C0F8028B10094CB5B /* NTSpotifyRemoteSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A530A7B0F8028B10094CB5B /* NTSpotifyRemoteSearch.m */; };
+		3A530B6D0F803B180094CB5B /* track.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3A530B6B0F803B180094CB5B /* track.icns */; };
+		3A530B8E0F803F6E0094CB5B /* artist.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3A530B8C0F803F6E0094CB5B /* artist.icns */; };
+		3A530B8F0F803F6E0094CB5B /* album.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3A530B8D0F803F6E0094CB5B /* album.icns */; };
+		3A97630B0F759B88007DD42F /* NTSpotifyListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9761690F75776B007DD42F /* NTSpotifyListener.m */; };
+		3A9763BD0F766A05007DD42F /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9763BB0F766A05007DD42F /* logging.c */; };
+		CD88B8500F75628B008AD079 /* NTManagerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD88B8430F7561E7008AD079 /* NTManagerPlugin.m */; };
+		CD88B8610F756394008AD079 /* NTDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD88B8600F756394008AD079 /* NTDummy.m */; };
+		CD88B8C30F75669A008AD079 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD88B8BF0F756683008AD079 /* schema.xml */; };
+		CD88B8D00F756750008AD079 /* NTGetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CD88B8C10F756683008AD079 /* NTGetMetadataForFile.m */; };
+		CD88B8D10F756757008AD079 /* NTMDImporterMain.c in Sources */ = {isa = PBXBuildFile; fileRef = CD88B8C00F756683008AD079 /* NTMDImporterMain.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A530B360F8037170094CB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5308C20F7FCFF50094CB5B;
+			remoteInfo = "handler-app";
+		};
+		3A530B380F8037210094CB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5308C20F7FCFF50094CB5B;
+			remoteInfo = "handler-app";
+		};
+		CD88B8F60F756A9D008AD079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD0179B80F7558EA00F3D570;
+			remoteInfo = dummy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A5308C30F7FCFF50094CB5B /* Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Light.app; path = Spot2spot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5308CE0F7FD0480094CB5B /* handler-app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "handler-app.plist"; sourceTree = "<group>"; };
+		3A5308CF0F7FD0480094CB5B /* handler-app.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "handler-app.xcconfig"; sourceTree = "<group>"; };
+		3A5308E00F7FD0C20094CB5B /* handler-app.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "handler-app.pch"; sourceTree = "<group>"; };
+		3A5309000F7FD1220094CB5B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A530A7A0F8028B10094CB5B /* NTSpotifyRemoteSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTSpotifyRemoteSearch.h; path = "simbl-plugin/NTSpotifyRemoteSearch.h"; sourceTree = "<group>"; };
+		3A530A7B0F8028B10094CB5B /* NTSpotifyRemoteSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTSpotifyRemoteSearch.m; path = "simbl-plugin/NTSpotifyRemoteSearch.m"; sourceTree = "<group>"; };
+		3A530B6B0F803B180094CB5B /* track.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = track.icns; sourceTree = "<group>"; };
+		3A530B8C0F803F6E0094CB5B /* artist.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = artist.icns; sourceTree = "<group>"; };
+		3A530B8D0F803F6E0094CB5B /* album.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = album.icns; sourceTree = "<group>"; };
+		3A9761480F7572D6007DD42F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; usesTabs = 0; };
+		3A9761680F75776B007DD42F /* NTSpotifyListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTSpotifyListener.h; path = "simbl-plugin/NTSpotifyListener.h"; sourceTree = "<group>"; };
+		3A9761690F75776B007DD42F /* NTSpotifyListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTSpotifyListener.m; path = "simbl-plugin/NTSpotifyListener.m"; sourceTree = "<group>"; };
+		3A9763BB0F766A05007DD42F /* logging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = logging.c; path = shared/logging.c; sourceTree = "<group>"; };
+		3A9763BC0F766A05007DD42F /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logging.h; path = shared/logging.h; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* Aziz.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Aziz.bundle; path = spot2spot.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0179B90F7558EA00F3D570 /* dummy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dummy; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0179D10F755B3200F3D570 /* base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = base.xcconfig; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8420F7561E7008AD079 /* NTManagerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTManagerPlugin.h; path = "simbl-plugin/NTManagerPlugin.h"; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8430F7561E7008AD079 /* NTManagerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTManagerPlugin.m; path = "simbl-plugin/NTManagerPlugin.m"; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8600F756394008AD079 /* NTDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTDummy.m; path = shared/NTDummy.m; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8AB0F7565CD008AD079 /* simbl.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simbl.pch; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8AC0F7565CD008AD079 /* simbl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = simbl.plist; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8AD0F7565CD008AD079 /* simbl.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = simbl.xcconfig; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8BD0F756683008AD079 /* mdimporter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mdimporter.plist; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8BE0F756683008AD079 /* mdimporter.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mdimporter.xcconfig; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8BF0F756683008AD079 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8C00F756683008AD079 /* NTMDImporterMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = NTMDImporterMain.c; path = mdimporter/NTMDImporterMain.c; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8C10F756683008AD079 /* NTGetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTGetMetadataForFile.m; path = mdimporter/NTGetMetadataForFile.m; sourceTree = "<group>"; usesTabs = 0; };
+		CD88B8C20F75668B008AD079 /* Aziz.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Aziz.mdimporter; path = spot2spot.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A5308C10F7FCFF50094CB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ntmanager */ = {
+			isa = PBXGroup;
+			children = (
+				3A9761480F7572D6007DD42F /* README.md */,
+				CD88B84B0F75621D008AD079 /* mdimporter */,
+				3A5308CC0F7FD0480094CB5B /* handler-app */,
+				08FB77AFFE84173DC02AAC07 /* simbl-plugin */,
+				19C28FB8FE9D52D311CA2CBB /* products */,
+				3A9763A50F766901007DD42F /* shared */,
+				CD0179D10F755B3200F3D570 /* base.xcconfig */,
+			);
+			name = ntmanager;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* simbl-plugin */ = {
+			isa = PBXGroup;
+			children = (
+				CD88B8460F7561E7008AD079 /* support */,
+				CD88B8420F7561E7008AD079 /* NTManagerPlugin.h */,
+				CD88B8430F7561E7008AD079 /* NTManagerPlugin.m */,
+				3A9761680F75776B007DD42F /* NTSpotifyListener.h */,
+				3A9761690F75776B007DD42F /* NTSpotifyListener.m */,
+				3A530A7A0F8028B10094CB5B /* NTSpotifyRemoteSearch.h */,
+				3A530A7B0F8028B10094CB5B /* NTSpotifyRemoteSearch.m */,
+			);
+			name = "simbl-plugin";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* products */ = {
+			isa = PBXGroup;
+			children = (
+				CD88B8C20F75668B008AD079 /* Aziz.mdimporter */,
+				8D5B49B6048680CD000E48DA /* Aziz.bundle */,
+				CD0179B90F7558EA00F3D570 /* dummy */,
+				3A5308C30F7FCFF50094CB5B /* Light.app */,
+			);
+			name = products;
+			sourceTree = "<group>";
+		};
+		3A5308CC0F7FD0480094CB5B /* handler-app */ = {
+			isa = PBXGroup;
+			children = (
+				3A5309000F7FD1220094CB5B /* main.m */,
+				3A5308CD0F7FD0480094CB5B /* support */,
+			);
+			path = "handler-app";
+			sourceTree = "<group>";
+		};
+		3A5308CD0F7FD0480094CB5B /* support */ = {
+			isa = PBXGroup;
+			children = (
+				3A530B8C0F803F6E0094CB5B /* artist.icns */,
+				3A530B8D0F803F6E0094CB5B /* album.icns */,
+				3A530B6B0F803B180094CB5B /* track.icns */,
+				3A5308E00F7FD0C20094CB5B /* handler-app.pch */,
+				3A5308CE0F7FD0480094CB5B /* handler-app.plist */,
+				3A5308CF0F7FD0480094CB5B /* handler-app.xcconfig */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		3A9763A50F766901007DD42F /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				3A9763BC0F766A05007DD42F /* logging.h */,
+				3A9763BB0F766A05007DD42F /* logging.c */,
+				CD88B8600F756394008AD079 /* NTDummy.m */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		CD88B8460F7561E7008AD079 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				CD88B8AB0F7565CD008AD079 /* simbl.pch */,
+				CD88B8AC0F7565CD008AD079 /* simbl.plist */,
+				CD88B8AD0F7565CD008AD079 /* simbl.xcconfig */,
+			);
+			name = support;
+			path = "simbl-plugin/support";
+			sourceTree = "<group>";
+		};
+		CD88B84B0F75621D008AD079 /* mdimporter */ = {
+			isa = PBXGroup;
+			children = (
+				CD88B8BC0F756683008AD079 /* support */,
+				CD88B8C00F756683008AD079 /* NTMDImporterMain.c */,
+				CD88B8C10F756683008AD079 /* NTGetMetadataForFile.m */,
+			);
+			name = mdimporter;
+			sourceTree = "<group>";
+		};
+		CD88B8BC0F756683008AD079 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				CD88B8BD0F756683008AD079 /* mdimporter.plist */,
+				CD88B8BE0F756683008AD079 /* mdimporter.xcconfig */,
+				CD88B8BF0F756683008AD079 /* schema.xml */,
+			);
+			name = support;
+			path = mdimporter/support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A5308C20F7FCFF50094CB5B /* handler-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5308C90F7FD0130094CB5B /* Build configuration list for PBXNativeTarget "handler-app" */;
+			buildPhases = (
+				3A5308BF0F7FCFF50094CB5B /* Resources */,
+				3A5308C00F7FCFF50094CB5B /* Sources */,
+				3A5308C10F7FCFF50094CB5B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "handler-app";
+			productName = spot2spot;
+			productReference = 3A5308C30F7FCFF50094CB5B /* Light.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D5B49AC048680CD000E48DA /* spot2spot-simbl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "spot2spot-simbl" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD88B8F70F756A9D008AD079 /* PBXTargetDependency */,
+				3A530B390F8037210094CB5B /* PBXTargetDependency */,
+			);
+			name = "spot2spot-simbl";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = ntmanager;
+			productReference = 8D5B49B6048680CD000E48DA /* Aziz.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CD0179B80F7558EA00F3D570 /* dummy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0179C20F75591500F3D570 /* Build configuration list for PBXNativeTarget "dummy" */;
+			buildPhases = (
+				CD0179B60F7558EA00F3D570 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dummy;
+			productName = dummy;
+			productReference = CD0179B90F7558EA00F3D570 /* dummy */;
+			productType = "com.apple.product-type.tool";
+		};
+		CD88B8B10F75661D008AD079 /* spot2spot-mdimporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD88B8B80F75661E008AD079 /* Build configuration list for PBXNativeTarget "spot2spot-mdimporter" */;
+			buildPhases = (
+				CD88B8AE0F75661D008AD079 /* Resources */,
+				CD88B8AF0F75661D008AD079 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A530B370F8037170094CB5B /* PBXTargetDependency */,
+			);
+			name = "spot2spot-mdimporter";
+			productName = "spot2spot-mdimporter";
+			productReference = CD88B8C20F75668B008AD079 /* Aziz.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "spot2spot" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* ntmanager */;
+			productRefGroup = 089C166AFE841209C02AAC07 /* ntmanager */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD88B8B10F75661D008AD079 /* spot2spot-mdimporter */,
+				8D5B49AC048680CD000E48DA /* spot2spot-simbl */,
+				CD0179B80F7558EA00F3D570 /* dummy */,
+				3A5308C20F7FCFF50094CB5B /* handler-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A5308BF0F7FCFF50094CB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A530B6D0F803B180094CB5B /* track.icns in Resources */,
+				3A530B8E0F803F6E0094CB5B /* artist.icns in Resources */,
+				3A530B8F0F803F6E0094CB5B /* album.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD88B8AE0F75661D008AD079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD88B8C30F75669A008AD079 /* schema.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A5308C00F7FCFF50094CB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5309060F7FD1220094CB5B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A97630B0F759B88007DD42F /* NTSpotifyListener.m in Sources */,
+				CD88B8500F75628B008AD079 /* NTManagerPlugin.m in Sources */,
+				3A9763BD0F766A05007DD42F /* logging.c in Sources */,
+				3A530A7C0F8028B10094CB5B /* NTSpotifyRemoteSearch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0179B60F7558EA00F3D570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD88B8610F756394008AD079 /* NTDummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD88B8AF0F75661D008AD079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A53097E0F7FE2700094CB5B /* logging.c in Sources */,
+				CD88B8D00F756750008AD079 /* NTGetMetadataForFile.m in Sources */,
+				CD88B8D10F756757008AD079 /* NTMDImporterMain.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A530B370F8037170094CB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5308C20F7FCFF50094CB5B /* handler-app */;
+			targetProxy = 3A530B360F8037170094CB5B /* PBXContainerItemProxy */;
+		};
+		3A530B390F8037210094CB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5308C20F7FCFF50094CB5B /* handler-app */;
+			targetProxy = 3A530B380F8037210094CB5B /* PBXContainerItemProxy */;
+		};
+		CD88B8F70F756A9D008AD079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD0179B80F7558EA00F3D570 /* dummy */;
+			targetProxy = CD88B8F60F756A9D008AD079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8AD0F7565CD008AD079 /* simbl.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8AD0F7565CD008AD079 /* simbl.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0179D10F755B3200F3D570 /* base.xcconfig */;
+			buildSettings = {
+				BUILD_VARIANTS = debug;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0179D10F755B3200F3D570 /* base.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+			};
+			name = Release;
+		};
+		3A5308C50F7FCFF60094CB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5308CF0F7FD0480094CB5B /* handler-app.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+		3A5308C60F7FCFF60094CB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5308CF0F7FD0480094CB5B /* handler-app.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		3A5308C70F7FCFF60094CB5B /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5308CF0F7FD0480094CB5B /* handler-app.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+			};
+			name = Profile;
+		};
+		CD0179970F7549D000F3D570 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0179D10F755B3200F3D570 /* base.xcconfig */;
+			buildSettings = {
+				BUILD_VARIANTS = profile;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Profile;
+		};
+		CD0179980F7549D000F3D570 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8AD0F7565CD008AD079 /* simbl.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		CD0179BB0F7558EA00F3D570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = dummy;
+			};
+			name = Debug;
+		};
+		CD0179BC0F7558EA00F3D570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = dummy;
+			};
+			name = Release;
+		};
+		CD0179BD0F7558EA00F3D570 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = dummy;
+			};
+			name = Profile;
+		};
+		CD88B8B50F75661E008AD079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8BE0F756683008AD079 /* mdimporter.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CD88B8B60F75661E008AD079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8BE0F756683008AD079 /* mdimporter.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		CD88B8B70F75661E008AD079 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD88B8BE0F756683008AD079 /* mdimporter.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "spot2spot-simbl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+				CD0179980F7549D000F3D570 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "spot2spot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+				CD0179970F7549D000F3D570 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3A5308C90F7FD0130094CB5B /* Build configuration list for PBXNativeTarget "handler-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5308C50F7FCFF60094CB5B /* Debug */,
+				3A5308C60F7FCFF60094CB5B /* Release */,
+				3A5308C70F7FCFF60094CB5B /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD0179C20F75591500F3D570 /* Build configuration list for PBXNativeTarget "dummy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0179BB0F7558EA00F3D570 /* Debug */,
+				CD0179BC0F7558EA00F3D570 /* Release */,
+				CD0179BD0F7558EA00F3D570 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD88B8B80F75661E008AD079 /* Build configuration list for PBXNativeTarget "spot2spot-mdimporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD88B8B50F75661E008AD079 /* Debug */,
+				CD88B8B60F75661E008AD079 /* Release */,
+				CD88B8B70F75661E008AD079 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

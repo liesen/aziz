@@ -1,0 +1,9 @@
+
+PRODUCT_NAME = spot2spot
+GCC_PREFIX_HEADER = simbl-plugin/support/simbl.pch
+INFOPLIST_FILE = simbl-plugin/support/simbl.plist
+
+WRAPPER_EXTENSION = bundle
+
+LD_FLAGS = $(LD_FLAGS) -framework Cocoa
+OTHER_LDFLAGS = -undefined dynamic_lookup
